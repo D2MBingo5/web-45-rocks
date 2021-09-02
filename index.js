@@ -1,7 +1,9 @@
+require('dotenv').config() // this allows us to stash 'artificial env variables' in a file
 const express = require('express')
 const cors = require('cors')
 
 // console.log(process.env.PORT) // does not work on my machine, but should work on heroku
+console.log(process.env.LADY) // lives in .env
 
 const PORT = process.env.PORT || 5000 // genius
 
